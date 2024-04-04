@@ -1,5 +1,10 @@
 // retorna o valor da soma entre os dois parâmetros
-function sum(v1, v2) {}
+function sum(v1, v2) {
+  const value1 = parseInt(v1);
+  const value2 = parseInt(v2);
+
+  return value1 + value2;
+}
 
 // retorna o valor da subtração entre os dois parâmetros
 function sub(v1, v2) {}
@@ -13,4 +18,4 @@ function mult(v1, v2) {}
 // retorna o valor da raiz quadrada do valor recebido por parâmetro
 function square(v1) {}
 
-console.log(sum(v1, v2));
+console.log(sum(5, 5));
