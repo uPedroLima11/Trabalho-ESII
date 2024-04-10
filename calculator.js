@@ -1,3 +1,5 @@
+const prompt = require("prompt-sync")();
+
 // retorna o valor da soma entre os dois parâmetros
 function sum(v1, v2) {
   const value1 = parseInt(v1);
@@ -18,4 +20,34 @@ function mult(v1, v2) {}
 // retorna o valor da raiz quadrada do valor recebido por parâmetro
 function square(v1) {}
 
-console.log(sum(5, 5));
+console.log(`
+   ______________________________
+ /  \                             \.
+|   |                            |.
+ \_  |    1 - Somar               |.
+    |                            |.
+    |    2 - Subtrair            |.
+    |                            |.
+    |    3 - Multiplicar         |.
+    |                            |.
+    |    4 - Dividir             |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |   _________________________|___
+    |  /                            /.
+    \_/dc__________________________/.
+`);
+
+const option = Number(prompt("Escolha uma Operação: "));
+const firstNumber = Number(prompt("Primeiro Numero: "));
+const secondNumber = Number(prompt("Segundo Numero: "));
+
+switch (option) {
+  case 1:
+    console.log(
+      `A soma de ${firstNumber} e ${secondNumber} é : ${sum(firstNumber, secondNumber)}`);
+    break;
+}
