@@ -15,8 +15,16 @@ function sub(v1, v2) {}
 function div(v1, v2) {}
 
 // retorna o valor da multiplicação entre os dois parâmetros
-function mult(v1, v2) {}
+function mult(v1, v2) {
+  const  TotalMult = v1 * v2;
+  return TotalMult; 
+}
 
+// retorna o valor da raiz quadrada do valor recebido por parâmetro
+function square(v1) {}
+
+console.log(sum(5, 5));
+console.log(mult(6,5))
 // retorna o valor da raiz quadrada do valor recebido por parâmetro
 function square(v1) {}
 
@@ -50,4 +58,7 @@ switch (option) {
     console.log(
       `A soma de ${firstNumber} e ${secondNumber} é : ${sum(firstNumber, secondNumber)}`);
     break;
+  case 3 :
+    console.log(
+      `A multiplicação de ${firstNumber} e ${secondNumber} é : ${mult(firstNumber, secondNumber)}`);
 }
