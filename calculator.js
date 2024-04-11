@@ -24,7 +24,7 @@ function mult(v1, v2) {
 function square(v1) {}
 
 console.log(sum(5, 5));
-console.log(mult(6,5))
+console.log(mult(7,5))
 // retorna o valor da raiz quadrada do valor recebido por parâmetro
 function square(v1) {}
 
